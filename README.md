@@ -94,7 +94,7 @@ _**Note:** Add your program descriptions below._
 
 ### v0.2
 
-[buttons A and B trigger simple sprites [file](section-2.js)]
+**buttons A and B trigger simple sprites [file](section-2.js)**
 
 ## Designs
 
