@@ -1,6 +1,9 @@
 //section 3 intro to CS
+//this is a simple program that will count up or down through the fibonacci
+//the sequence is dirived by starting from 1 adding 1 to get 2 the adding the last two numbers together to get the next number
+//i.e. 1,1,2,3,5,8,13,21,34..........
 
-//fibonachi sequence goes up 
+//fibonacci sequence goes up 
 input.onButtonPressed(Button.B, function () {
     phiSum = countDown + countUp
     basic.showNumber(phiSum)
@@ -8,7 +11,7 @@ input.onButtonPressed(Button.B, function () {
     countDown = countUp
     countUp = phiSum
 })
-//fibonachi sequence goes down
+//fibonacci sequence goes down
 input.onButtonPressed(Button.A, function () {
     phiSum = countUp - countDown
     basic.showNumber(countUp)
