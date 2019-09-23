@@ -1,4 +1,4 @@
-# CPE 1040 - Introduction to Computer Engeneering
+# CPE 1040 - Introduction to Computer Engineering
 
 ## Assignment: Migrating micro:bit Programming from Blocks to JavaScript
 
