@@ -4,9 +4,10 @@
 
 //instructions for game:
 //2 or more mature adults throw out a name of a person
+//one player shakes the micro:bit
 //the micro:bit then randomly choices your fate,
-//whether or not one should Fuck, Marry or Kill them.
-//invented in ancient greece as a means of furthering democractic principle
+//whether or not one should Fuck, Marry or Kill the person the 2 players agreeded on.
+//note: invented in ancient greece as a means of furthering democractic principle
 
 let choice = 0
 choice = 0
