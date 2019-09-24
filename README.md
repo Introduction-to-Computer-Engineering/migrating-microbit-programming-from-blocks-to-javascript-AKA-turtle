@@ -106,11 +106,12 @@ _**Note:** Add your project designs below._
 
 #### Goal
 
-**[your short description]**
+**My goal is to create a simple game mechanic. A bouncing sprite named "ball" shall bounce with good animation. It will traverse left and right as seen by the ground moving beneath. The ball will constantly bounce off of the ground, which will be the bottom row of LEDs illuminated. Super Goal: As the ball moves to the right holes will appear in the ground which one must avoid.**
 
 #### Design process
 
-**[your sketches, the things you tried, the questions you asked yourself, the answers, the sticking points, the iterations, the restarts, the final version]**
+**I will start by building a good bounce loop.
+Then I'll build a ground animation tied to the controller buttons**
 
 #### JS Constructs & objects
 
