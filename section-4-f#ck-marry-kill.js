@@ -17,7 +17,7 @@ input.onGesture(Gesture.Shake, function () {
     if (choice == 1) {
         basic.showString("marry!")
     }else if (choice == 2){
-        basic.showString("fuck!")
+        basic.showString("f#ck!")
     }else {
         basic.showString("Kill!")
     }
