@@ -110,12 +110,18 @@ _**Note:** Add your project designs below._
 
 #### Design process
 
-**I will start by building a good bounce loop.
-Then I'll build a ground animation tied to the controller buttons**
+**In trying to create a good bounce loop the key is to have movement up and down follow the timimg of a parabala. Or said another way the ball/sprite needs to move from fast to slow back to fast before it 'hits' the ground. I could do this in several ways. In traditional animation I would move the sprite one grid point at a time and choose the time between each move by hand. What I want to do here instead was to do it procedurely using for loops and some math. **
 
 #### JS Constructs & objects
 
-**[which JavaScript features you used in the implementation of your project idea]**
+**The process for this is to:
+-use the count of the for loop
+-take the count multiply it by itself. i.e. count=1,2,3,4 result=1,4,9,16
+-take the result and multiply it by a delay time, say 14ms
+this was i can control the overall timing by just adjust the single delay time, instead of a bunch of individual delays.
+
+So far I've gotton it to work on the way up, but it needs to reverse for the way down.
+I think I need to create two states. an Up and a Down state and flip between the two to get the correct result.**
 
 ### Final project
 
