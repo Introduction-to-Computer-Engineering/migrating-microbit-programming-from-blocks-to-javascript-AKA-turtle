@@ -22,7 +22,7 @@
 
 ### v0.6
 
-**midterm [file](mini-project-bounce working.js)**
+**midterm [file](mini-project-bounce-working.js)**
 
 
 ### v0.7
