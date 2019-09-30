@@ -2,23 +2,6 @@
 
 ## Assignment: Migrating micro:bit Programming from Blocks to JavaScript
 
-### 1. Summary
-
-This assignment asks you to go through a [Intro to CS course with Blocks](https://makecode.microbit.org/courses/csintro) for the micro:bit, and write parallel programs using the JavaScript equivalent of the code in the course modules. This assignment is submitted through Github.
-
-### 2. Requirements
-
-#### 2.1 Section programs
-
-1. The CS course is broken down into thematic sections. There are 5 sections + 1 midterm project + 5 sections + final project. Each section has 4 parts. You want the _Activity_ part, which contains the section's CS material and Blocks.
-
-2. You need to write a _working_ JavaScript (JS) program for the micro:bit for each of these sections/projects, for a total of 12.  
-
-3. For the non-project sections, you are required to use the JS equivalent of the material from the section. _**Note:** For these programs, you are allowed to look at the JS translation of Blocks programs._
-
-4. For the midterm project, you are required to use the JS equivalent of the material from all 5 preceding sections.  _**Note:** For this project, you are NOT allowed to look at the JS translation of Blocks programs._ (An aside: if you don't know how to read a statement like "you are not allowed to", the intended and preferred interpretation is "you can do whatever you want and won't be penalized by me, but, if you want to learn most effectively, I suggest that you do not resort to...".)
-
-5. For the final project, you are required to use the JS equivalent of the material from all 10 preceding non-project sections. _**Note:** For this project, you are NOT allowed to look at the JS translation of Blocks programs._
 
 #### 2.2 Github commits & tags
 
@@ -50,19 +33,6 @@ This assignment asks you to go through a [Intro to CS course with Blocks](https:
 
 4. The [projects](https://www.itpro.co.uk/desktop-hardware/26289/13-top-bbc-micro-bit-projects) at the [awesome micro:bit list](https://github.com/carlosperate/awesome-microbit).
 
-### Github
-
-1. Github Tutorial for Beginners ([webpage](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)).
-
-2. Github Basics for Mac and Windows ([video](https://www.youtube.com/watch?v=0fKg7e37bQE)).
-
-3. git & Github Crash Course for Beginners ([video](https://www.youtube.com/watch?v=SWYqp7iY_Tc)).
-
-4. Introduction to Github for Beginners ([video](https://www.youtube.com/watch?v=fQLK8Ib_SKk)).
-
-5. About `git` ([webpage](https://git-scm.com/about)).
-
-6. `git` [documentation](https://git-scm.com/doc) (webpage, book, videos, reference manual).
 
 ### JavaScript
 
@@ -86,19 +56,45 @@ This assignment asks you to go through a [Intro to CS course with Blocks](https:
 
 ## Tags
 
-_**Note:** Add your program descriptions below._
-
-### v0.1
-
-**[your description here, linking to the JavaScript [file](example.js)**]
-
 ### v0.2
 
-**buttons A and B trigger simple animations [file](section-2.js)**
+**Buttons A and B trigger simple animations [file](section-2.js)**
+
+### v0.3
+
+**Buttons A and B cause fibonacci series to count up or down [file](section-3-Phi-Counter.js)**
+
+### v0.4
+
+**shaking Microbit answers question, should I, Marry, F#ck, Kill [file](section-4-f#ck-marry-kill.js)**
+
+### v0.5
+
+**buttons A triggers a pinwheel animation [file](section-5-spinner.js)**
+
+### v0.7
+
+**buttons A and B cause random pixels to illuminate[file](Section-7-led-random.js)**
+
+### v0.8
+
+**creates some odd conditions on whether leds will light or not dependind on order and combination of button presses [file](section-8-booleanish.js)**
+
+### v0.9
+
+**exactly like the section activity, did not use blocks  [file](section-9-unmodified)**
+
+### v0.10
+
+**went through activity. did not create file**
+
+### v0.11
+
+**was able to complete correct ball animation using arrays [file](section-11-bounce-arrary.js)**
 
 ## Designs
 
-_**Note:** Add your project designs below._
+
 
 ### Midterm project
 
@@ -125,4 +121,17 @@ I think I need to create two states. an Up and a Down state and flip between the
 
 ### Final project
 
-**[etc.]**
+#### Goal
+
+**My goal is to create a working game. There should be 3 processes.
+1) have ball bounce on hitting button A (completed)
+2) procedurally create a gound of varying brightnesses that moves left as you press button B
+3) the ground will randomly create 'open' spaces (zero brightness) that if the ball bounces into these spots it will be game over
+
+#### Design process
+With the bouncing animation working in one JS file already I began creating the procedural ground program in a seperate file.
+For the ground I imagined the bottom 5 pixels being the ground. To percieve movement of the ground I realized I needed to create a variation of brightnesses of the pixels to begin with, then shift those pixels to the left. The eye will track the shifting and percieve it as movement. I didn't want to hand program each new pixel in the ground as it appeared, so I set up an array which had an element was constanly being added to at the end when button B was pressed, while also deleting element 0. The new Element randomly chooses 1 of 5 values of brightness including 0. If 0 is chosesn then theres's 'no' ground and the ball if it lands on that spot will be game over.
+
+#### JS Constructs & objects
+-arrays within arrays
+-generating random values that then select array elements
