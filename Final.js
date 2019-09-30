@@ -11,28 +11,28 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onButtonPressed(Button.A, function () {
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 2; i++) {            //creates animation by interating movement
         for (let j = 0; j <= 4 - 1; j++) {
             sprite.move(1)
-            basic.pause(list[j])
+            basic.pause(list[j])            //changes timing for each move
         }
         sprite.turn(Direction.Right, 180)
-        list.reverse()
+        list.reverse()                      //reverses timing for down movement
     }
 })
 let list: number[] = []
 let sprite: game.LedSprite = null
 let brightnessLevels: number[] = []
 let groundArray: number[] = []
-basic.showString("B MOVE RIGHT - A jUMP")
+basic.showString("B MOVE RIGHT - A jUMP") //loading instructions
 let groundMove: number[] = []
 groundArray = []
 groundMove = []
 
 brightnessLevels = [0, 20, 60, 100, 200] // default brightness levels DO NOT MOVE
 groundArray = [brightnessLevels[3], brightnessLevels[2], brightnessLevels[2], brightnessLevels[3], brightnessLevels[2]]
-// sets initial ground
-led.plotBrightness(0, 4, groundArray[0])
+
+led.plotBrightness(0, 4, groundArray[0]) // sets initial ground sprites. WORKED INTITIALLY BUT NOT AFTER MERGE WITH BOUNCE ANIMATION
 led.plotBrightness(1, 4, groundArray[1])
 led.plotBrightness(2, 4, groundArray[2])
 led.plotBrightness(3, 4, groundArray[3])
