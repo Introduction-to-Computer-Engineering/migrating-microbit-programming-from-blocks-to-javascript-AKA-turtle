@@ -68,7 +68,9 @@ In trying to create a good bounce loop the key is to have movement up and down f
 
 The process for this is to:
 -use the count of the for loop
+
 -take the count multiply it by itself. i.e. count=1,2,3,4 result=1,4,9,16
+
 -take the result and multiply it by a delay time, say 14ms
 this was i can control the overall timing by just adjust the single delay time, instead of a bunch of individual delays.
 
