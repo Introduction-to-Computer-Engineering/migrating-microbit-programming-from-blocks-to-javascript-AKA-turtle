@@ -91,6 +91,6 @@ For the ground I imagined the bottom 5 pixels being the ground. To percieve move
 **Got it to work except initial graound won't render so play has to jump and quickly make the first move otherwise game over.**
 
 #### JS Constructs & objects
--arrays within arrays
--generating random values that then select array elements
--if statement with boolean to determine game over state
+**-arrays within arrays**
+**-generating random values that then select array elements**
+**-if statement with boolean to determine game over state**
