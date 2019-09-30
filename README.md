@@ -20,6 +20,11 @@
 
 **buttons A triggers a pinwheel animation [file](section-5-spinner.js)**
 
+### v0.6
+
+**midterm [file](mini-project-bounce working.js)**
+
+
 ### v0.7
 
 **buttons A and B cause random pixels to illuminate [file](Section-7-led-random.js)**
@@ -39,6 +44,10 @@
 ### v0.11
 
 **was able to complete correct ball animation using arrays [file](section-11-bounce-arrary.js)**
+
+### v0.12
+
+**Final [file](Final.js)**
 
 ## Designs
 
