@@ -61,9 +61,9 @@
 -use the count of the for loop
 -take the count multiply it by itself. i.e. count=1,2,3,4 result=1,4,9,16
 -take the result and multiply it by a delay time, say 14ms
-this was i can control the overall timing by just adjust the single delay time, instead of a bunch of individual delays.
+this was i can control the overall timing by just adjust the single delay time, instead of a bunch of individual delays.**
 
-So far I've gotton it to work on the way up, but it needs to reverse for the way down.
+**So far I've gotton it to work on the way up, but it needs to reverse for the way down.
 I think I need to create two states. an Up and a Down state and flip between the two to get the correct result.**
 
 ### Final project
@@ -71,14 +71,17 @@ I think I need to create two states. an Up and a Down state and flip between the
 #### Goal
 
 **My goal is to create a working game. There should be 3 processes.
-1) have ball bounce on hitting button A (completed)
-2) procedurally create a gound of varying brightnesses that moves left as you press button B
-3) the ground will randomly create 'open' spaces (zero brightness) that if the ball bounces into these spots it will be game over
+**1) have ball bounce on hitting button A (completed)
+**2) procedurally create a gound of varying brightnesses that moves left as you press button B
+**3) the ground will randomly create 'open' spaces (zero brightness) that if the ball bounces into these spots it will be game over**
 
 #### Design process
 With the bouncing animation working in one JS file already I began creating the procedural ground program in a seperate file.
-For the ground I imagined the bottom 5 pixels being the ground. To percieve movement of the ground I realized I needed to create a variation of brightnesses of the pixels to begin with, then shift those pixels to the left. The eye will track the shifting and percieve it as movement. I didn't want to hand program each new pixel in the ground as it appeared, so I set up an array which had an element was constanly being added to at the end when button B was pressed, while also deleting element 0. The new Element randomly chooses 1 of 5 values of brightness including 0. If 0 is chosesn then theres's 'no' ground and the ball if it lands on that spot will be game over.
+For the ground I imagined the bottom 5 pixels being the ground. To percieve movement of the ground I realized I needed to create a variation of brightnesses of the pixels to begin with, then shift those pixels to the left. The eye will track the shifting and percieve it as movement. I didn't want to hand program each new pixel in the ground as it appeared, so I set up an array which had an element was constanly being added to at the end when button B was pressed, while also deleting element 0. The new Element randomly chooses 1 of 5 values of brightness including 0. If 0 is chosesn then theres's 'no' ground and the ball if it lands on that spot will be game over. the game will determine game over if the ground at the landing point of ball has no illumination and the ball is at position x1,y4
+
+**Got it to work except initial graound won't render so play has to jump and quickly make the first move otherwise game over.**
 
 #### JS Constructs & objects
 -arrays within arrays
 -generating random values that then select array elements
+-if statement with boolean to determine game over state
