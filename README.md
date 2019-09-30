@@ -62,7 +62,7 @@
 
 #### Design process
 
-**In trying to create a good bounce loop the key is to have movement up and down follow the timimg of a parabala. Or said another way the ball/sprite needs to move from fast to slow back to fast before it 'hits' the ground. I could do this in several ways. In traditional animation I would move the sprite one grid point at a time and choose the time between each move by hand. What I want to do here instead was to do it procedurely using for loops and some math. **
+**In trying to create a good bounce loop the key is to have movement up and down follow the timimg of a parabala. Or said another way the ball/sprite needs to move from fast to slow back to fast before it 'hits' the ground. I could do this in several ways. In traditional animation I would move the sprite one grid point at a time and choose the time between each move by hand. What I want to do here instead was to do it procedurely using for loops and some math.**
 
 #### JS Constructs & objects
 
