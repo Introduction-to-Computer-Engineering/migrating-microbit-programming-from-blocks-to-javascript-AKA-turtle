@@ -22,7 +22,7 @@
 
 ### v0.7
 
-**buttons A and B cause random pixels to illuminate[file](Section-7-led-random.js)**
+**buttons A and B cause random pixels to illuminate [file](Section-7-led-random.js)**
 
 ### v0.8
 
