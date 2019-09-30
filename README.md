@@ -92,5 +92,7 @@ For the ground I imagined the bottom 5 pixels being the ground. To percieve move
 
 #### JS Constructs & objects
 **-arrays within arrays**
+
 **-generating random values that then select array elements**
+
 **-if statement with boolean to determine game over state**
