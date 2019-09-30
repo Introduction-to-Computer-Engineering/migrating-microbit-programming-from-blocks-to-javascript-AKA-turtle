@@ -66,7 +66,8 @@ In trying to create a good bounce loop the key is to have movement up and down f
 
 #### JS Constructs & objects
 
-The process for this is to:
+**The process for this is to:**
+
 -use the count of the for loop
 
 -take the count multiply it by itself. i.e. count=1,2,3,4 result=1,4,9,16
