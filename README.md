@@ -80,8 +80,8 @@ I think I need to create two states. an Up and a Down state and flip between the
 #### Goal
 
 **My goal is to create a working game. There should be 3 processes.
-1) have ball bounce on hitting button A (completed)
-2) procedurally create a gound of varying brightnesses that moves left as you press button B
+1) have ball bounce on hitting button A (completed)**
+**2) procedurally create a gound of varying brightnesses that moves left as you press button B
 3) the ground will randomly create 'open' spaces (zero brightness) that if the ball bounces into these spots it will be game over**
 
 #### Design process
