@@ -58,19 +58,19 @@
 
 #### Goal
 
-**My goal is to create a simple game mechanic. A bouncing sprite named "ball" shall bounce with good animation. It will traverse left and right as seen by the ground moving beneath. The ball will constantly bounce off of the ground, which will be the bottom row of LEDs illuminated. Super Goal: As the ball moves to the right holes will appear in the ground which one must avoid.**
+My goal is to create a simple game mechanic. A bouncing sprite named "ball" shall bounce with good animation. It will traverse left and right as seen by the ground moving beneath. The ball will constantly bounce off of the ground, which will be the bottom row of LEDs illuminated. Super Goal: As the ball moves to the right holes will appear in the ground which one must avoid.
 
 #### Design process
 
-**In trying to create a good bounce loop the key is to have movement up and down follow the timimg of a parabala. Or said another way the ball/sprite needs to move from fast to slow back to fast before it 'hits' the ground. I could do this in several ways. In traditional animation I would move the sprite one grid point at a time and choose the time between each move by hand. What I want to do here instead was to do it procedurely using for loops and some math.**
+In trying to create a good bounce loop the key is to have movement up and down follow the timimg of a parabala. Or said another way the ball/sprite needs to move from fast to slow back to fast before it 'hits' the ground. I could do this in several ways. In traditional animation I would move the sprite one grid point at a time and choose the time between each move by hand. What I want to do here instead was to do it procedurely using for loops and some math.
 
 #### JS Constructs & objects
 
-**The process for this is to:
+The process for this is to:
 -use the count of the for loop
 -take the count multiply it by itself. i.e. count=1,2,3,4 result=1,4,9,16
 -take the result and multiply it by a delay time, say 14ms
-this was i can control the overall timing by just adjust the single delay time, instead of a bunch of individual delays.**
+this was i can control the overall timing by just adjust the single delay time, instead of a bunch of individual delays.
 
 **So far I've gotton it to work on the way up, but it needs to reverse for the way down.
 I think I need to create two states. an Up and a Down state and flip between the two to get the correct result.**
